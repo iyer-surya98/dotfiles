@@ -4,6 +4,7 @@
   font-family: "JetbrainsMono Nerd Font";
   font-size: 15px;
   min-height: 10px;
+  /* height: 5px; */
 }
 
 window#waybar {

@@ -80,7 +80,11 @@
     "show-special": true
   },
   /* === Modules Right === */
-  "wlr/taskbar": {
+    "tray": {
+	"icon-size": 15,
+	"spacing": 10
+    },
+    "wlr/taskbar": {
     "format": "{icon}",
     "all-outputs": true,
     "active-first": true,
