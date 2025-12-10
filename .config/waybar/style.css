@@ -2,8 +2,8 @@
 * {
   border: none;
   font-family: "JetbrainsMono Nerd Font";
-  font-size: 15px;
-  min-height: 10px;
+  font-size: 14px;
+  min-height: 5px;
   /* height: 5px; */
 }
 
@@ -167,7 +167,8 @@ window#waybar.hidden {
   padding-right: 15px;
 }
 #battery {
-  background: #FFFFFF;
+  border-radius: 10px;
+	background: #FFFFFF;
   padding-right: 15px;
 }
 /* === Optional animation === */
