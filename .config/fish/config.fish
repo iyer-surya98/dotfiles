@@ -13,3 +13,4 @@ fish_add_path "/home/iyers/.local/share/../bin"
 # manpager and pager
 set -gx MANPAGER "nvim +Man!"
 set -gx PAGER "bat"
+set -gx LANG "en_IN.UTF-8"
