@@ -670,7 +670,7 @@ binds {
 	Mod+Shift+N {spawn-sh "dms ipc call notifications toggleDoNotDisturb";}
 	// Open browser
 	Mod+B {spawn "firefox";}
-	
+    Mod+E {spawn "dolphin";}
 }
 
 
