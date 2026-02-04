@@ -4,6 +4,9 @@
 // https://yalter.github.io/niri/Configuration:-Introduction
 
 
+environment {
+	QT_QPA_PLATFORMTHEME "qt6ct"
+}
 // workspaces
 workspace "browser"
 workspace "gaming"
@@ -670,7 +673,7 @@ binds {
 	Mod+Shift+N {spawn-sh "dms ipc call notifications toggleDoNotDisturb";}
 	// Open browser
 	Mod+B {spawn "firefox";}
-    Mod+E {spawn "dolphin";}
+    Mod+E {spawn "nautilus";}
 }
 
 
