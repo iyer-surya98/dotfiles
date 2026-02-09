@@ -4,4 +4,4 @@ mkvf = [
 ]
 
 [open]
-rules = [{mime = "video/matroska", use = ["mkvf", "reveal"]},]
+rules = [{mime = "video/*", use = ["mkvf", "reveal"]},]
