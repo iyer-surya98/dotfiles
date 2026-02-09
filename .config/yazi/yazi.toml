@@ -1,0 +1,7 @@
+[opener]
+mkvf = [
+	{run = 'mpv "$@"', desc = "mpv", block = true, for = "unix"},
+]
+
+[open]
+rules = [{mime = "video/matroska", use = ["mkvf", "reveal"]},]
