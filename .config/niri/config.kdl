@@ -349,6 +349,7 @@ window-rule {
 	match app-id=r#"^steam$"#
 	open-focused false
 	open-on-workspace "gaming"
+	open-floating false
 }
 
 window-rule {
@@ -358,7 +359,7 @@ window-rule {
 }
 
 window-rule {
-	match app-id=r#"^discord$"#
+	match app-id=r#"^com.discordapp.Discord$"#
 	open-focused false
 	open-on-workspace "chat"
 }
