@@ -347,6 +347,7 @@ window-rule {
 // steam window rule
 window-rule {
 	match app-id=r#"^steam$"#
+	match title=r#"^Steam$"#
 	open-focused false
 	open-on-workspace "gaming"
 	open-floating false
