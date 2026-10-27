@@ -1,6 +1,6 @@
 {
     "currentVersionInfo": {
-        "version": "6.8.2",
+        "version": "6.10.1",
         "hasShownChangelog": true
     },
     "settings": {
@@ -41,7 +41,6 @@
         "userPfpIntegration": true,
         "userBgIntegration": true,
         "useClipBypass": true,
-        "alwaysTransmuxClips": true,
         "forceClip": false,
         "checkForUpdates": true,
         "fakeInlineVencordEmotes": true,
@@ -63,6 +62,9 @@
             "custom": false,
             "theme": "dark"
         },
-        "appIcon": "AppIcon"
+        "appIcon": "AppIcon",
+        "voiceTileBannerBackground": false,
+        "advancedProfileCustomization": false,
+        "alwaysTransmuxClips": true
     }
 }

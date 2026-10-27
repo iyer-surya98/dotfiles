@@ -20,7 +20,7 @@
 #: <https://sw.kovidgoyal.net/kitty/kittens/choose-fonts/#font-spec-
 #: syntax>.
 
-# font_size 11.0
+font_size 12.0
 
 #: Font size (in pts).
 
@@ -501,8 +501,8 @@
 #: If you would rather use neovim to view the scrollback, use
 #: something like this::
 
-#:     scrollback_pager nvim --cmd 'set eventignore=FileType' +'nnoremap q ZQ' +'call nvim_open_term(0, {})' +'set nomodified nolist' +'$' -
-
+    # scrollback_pager nvim --cmd 'set eventignore=FileType' +'nnoremap q ZQ' +'call nvim_open_term(0, {})' +'set nomodified nolist' +'$' -
+# scrollback_pager "bat -"
 #: The above works for neovim 0.12 and newer. There is also a
 #: dedicated plugin kitty-scrollback.nvim
 #: <https://github.com/mikesmithgh/kitty-scrollback.nvim> you can use
@@ -1273,7 +1273,7 @@
 #: The second number is the margin between the tab bar and the
 #: contents of the current tab.
 
-# tab_bar_style fade
+tab_bar_style powerline
 
 #: The tab bar style, can be one of:
 
@@ -1346,7 +1346,7 @@
 #: The separator between tabs in the tab bar when using separator as
 #: the tab_bar_style.
 
-# tab_powerline_style angled
+tab_powerline_style angled
 
 #: The powerline separator style between tabs in the tab bar when
 #: using powerline as the tab_bar_style, can be one of: angled,
@@ -1462,7 +1462,7 @@
 
 #: The foreground and background colors.
 
-backgroud_opacity 0.7
+background_opacity 0.95
 
 #: The opacity of the background. A number between zero and one, where
 #: one is opaque and zero is fully transparent. This will only work if
@@ -1488,7 +1488,7 @@ backgroud_opacity 0.7
 #: will only work if dynamic_background_opacity was enabled in the
 #: original config.
 
-# background_blur 0
+# background_blur 60
 
 #: Set to a positive value to enable background blur (blurring of the
 #: visuals behind a transparent window) on platforms that support it.
@@ -1522,7 +1522,7 @@ backgroud_opacity 0.7
 #: Note that you must also set background_opacity to something less
 #: than 1 for this setting to work properly.
 
-# dynamic_background_opacity no
+dynamic_background_opacity yes
 
 #: Allow changing of the background_opacity dynamically, using either
 #: keyboard shortcuts (increase_background_opacity and
@@ -1669,7 +1669,7 @@ backgroud_opacity 0.7
 
 #: Advanced {{{
 
-# shell .
+# shell /usr/bin/nu
 
 #: The shell program to execute. The default value of . means to use
 #: the value of of the SHELL environment variable or if unset,
@@ -2176,7 +2176,7 @@ backgroud_opacity 0.7
 #: configuration will change this value only for newly created OS
 #: windows.
 
-# linux_display_server auto
+linux_display_server wayland
 
 #: Choose between Wayland and X11 backends. By default, an appropriate
 #: backend based on the system state is chosen automatically. Set it
@@ -2958,3 +2958,8 @@ bold_font        auto
 italic_font      auto
 bold_italic_font auto
 # END_KITTY_FONTS
+
+
+# BEGIN_KITTY_THEME
+include dank-theme.conf
+# END_KITTY_THEME
