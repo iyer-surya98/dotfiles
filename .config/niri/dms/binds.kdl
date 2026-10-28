@@ -95,7 +95,7 @@ binds {
     Mod+Down { focus-window-down; }
     Mod+End { focus-column-last; }
     Mod+Equal { set-column-width "+10%"; }
-    Mod+F { maximize-column; }
+    Mod+F repeat=false hotkey-overlay-title="Maximize Column" { maximize-window-to-edges; }
     Mod+Home { focus-column-first; }
     Mod+J { focus-window-down; }
     Mod+K { focus-window-up; }
@@ -138,7 +138,7 @@ binds {
     Mod+E repeat=false { spawn "nautilus"; }
     Mod+Return hotkey-overlay-title="Open Terminal" { spawn "kitty"; }
     Mod+T hotkey-overlay-title="Open Terminal" { spawn "kitty"; }
-    XF86TouchpadToggle repeat=false allow-when-locked=true { spawn "niri" "msg" "action" "toggle-touchpad"; }
+    XF86TouchpadToggle allow-when-locked=true repeat=false { spawn "niri" "msg" "action" "toggle-touchpad"; }
     Mod+Escape allow-inhibiting=false { toggle-keyboard-shortcuts-inhibit; }
     Mod+O repeat=false { toggle-overview; }
     Mod+Tab repeat=false { toggle-overview; }
