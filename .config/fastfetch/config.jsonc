@@ -3,10 +3,16 @@
 // kitty wrap lines under the logo.
 {
   "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
+  // Official CachyOS logo (/usr/share/icons/cachyos.svg from cachyos-settings),
+  // rendered to a 1024px PNG because kitty can't draw SVG. Regenerate with:
+  //   rsvg-convert -w 1024 -h 1024 /usr/share/icons/cachyos.svg -o ~/.config/fastfetch/cachyos.png
+  // kitty-direct hands the PNG to kitty, which scales it to `width` cells.
   "logo": {
-    "type": "builtin",
-    "source": "CachyOS_small",
-    "padding": { "top": 1, "left": 0, "right": 2 }
+    "type": "kitty-direct",
+    "source": "~/.config/fastfetch/cachyos.png",
+    "width": 22,
+    "height": 10,
+    "padding": { "top": 2, "left": 1, "right": 3 }
   },
   "display": {
     "separator": "  ",
