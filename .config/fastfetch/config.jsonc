@@ -1,0 +1,37 @@
+// Compact fastfetch config sized for a narrow (~80 col) niri column.
+// The built-in default uses the large logo and long values, which made
+// kitty wrap lines under the logo.
+{
+  "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
+  "logo": {
+    "type": "builtin",
+    "source": "CachyOS_small",
+    "padding": { "top": 1, "left": 0, "right": 2 }
+  },
+  "display": {
+    "separator": "  ",
+    "key": { "width": 9 },
+    "color": { "keys": "cyan" },
+    "disableLinewrap": true
+  },
+  "modules": [
+    "title",
+    "separator",
+    { "type": "os",       "key": "os",     "format": "{pretty-name}" },
+    { "type": "host",     "key": "host",   "format": "{family}" },
+    { "type": "kernel",   "key": "kernel", "format": "{release}" },
+    { "type": "uptime",   "key": "uptime" },
+    { "type": "packages", "key": "pkgs" },
+    { "type": "shell",    "key": "shell" },
+    { "type": "wm",       "key": "wm",     "format": "{pretty-name}" },
+    { "type": "terminal", "key": "term" },
+    { "type": "display",  "key": "screen",  "format": "{width}x{height} @ {refresh-rate} Hz" },
+    { "type": "cpu",      "key": "cpu",    "format": "{name} ({cores-logical})" },
+    { "type": "gpu",      "key": "gpu",    "format": "{name}" },
+    { "type": "memory",   "key": "memory" },
+    { "type": "disk",     "key": "disk",   "folders": "/", "format": "{size-used} / {size-total} ({size-percentage})" },
+    { "type": "battery",  "key": "power",   "format": "{capacity} [{status}]" },
+    "break",
+    "colors"
+  ]
+}
