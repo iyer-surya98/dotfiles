@@ -17,7 +17,7 @@ binds {
     Mod+D hotkey-overlay-title="Dash" { spawn "dms" "ipc" "call" "dash" "toggle" ""; }
     Mod+L hotkey-overlay-title="Lock Screen" { spawn "dms" "ipc" "call" "lock" "lock"; }
     Mod+M hotkey-overlay-title="Media" { spawn "dms" "ipc" "call" "dash" "toggle" "media"; }
-    Mod+N hotkey-overlay-title="Notepad" { spawn "dms" "ipc" "call" "notepad" "toggle"; }
+    Mod+N repeat=false hotkey-overlay-title="Notifications: Open" { spawn "dms" "ipc" "call" "notifications" "open"; }
     Mod+P hotkey-overlay-title="Cycle Display Profile" { spawn "dms" "ipc" "outputs" "cycleProfile"; }
     Mod+R hotkey-overlay-title="Application Launcher" { spawn "dms" "ipc" "call" "spotlight" "toggle"; }
     Mod+Shift+C hotkey-overlay-title="Color Picker" { spawn "dms" "ipc" "call" "color-picker" "toggle"; }
@@ -136,9 +136,8 @@ binds {
     Mod+Shift+E { quit; }
     Mod+B hotkey-overlay-title="Firefox" { spawn "firefox"; }
     Mod+E repeat=false { spawn "nautilus"; }
-    Mod+Return hotkey-overlay-title="Open Terminal" { spawn "kitty"; }
-    Mod+T hotkey-overlay-title="Open Terminal" { spawn "kitty"; }
-    XF86TouchpadToggle allow-when-locked=true repeat=false { spawn "niri" "msg" "action" "toggle-touchpad"; }
+    Mod+T repeat=false { spawn "kitty"; }
+    XF86TouchpadToggle repeat=false allow-when-locked=true { spawn "niri" "msg" "action" "toggle-touchpad"; }
     Mod+Escape allow-inhibiting=false { toggle-keyboard-shortcuts-inhibit; }
     Mod+O repeat=false { toggle-overview; }
     Mod+Tab repeat=false { toggle-overview; }

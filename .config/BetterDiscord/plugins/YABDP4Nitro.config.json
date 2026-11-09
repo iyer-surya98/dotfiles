@@ -10,10 +10,7 @@
         "emojiBypassType": 0,
         "emojiBypassForValidEmoji": true,
         "PNGemote": true,
-        "uploadStickers": false,
-        "CustomFPSEnabled": false,
         "CustomFPS": 60,
-        "ResolutionEnabled": false,
         "CustomResolution": 1440,
         "CustomBitrateEnabled": false,
         "minBitrate": -1,
@@ -35,6 +32,7 @@
         "fakeAvatarDecorations": true,
         "unlockAppIcons": true,
         "profileEffects": true,
+        "profileFrames": true,
         "killProfileEffects": false,
         "customPFPs": true,
         "experiments": false,
@@ -52,7 +50,6 @@
         "disableUserBadge": false,
         "nameplatesEnabled": true,
         "clipTimestamp": 2,
-        "removeNotStaffWarning": true,
         "editMessageWithEmoji": true,
         "extraContextMenus": true,
         "userSharpenPreferences": {},
@@ -65,6 +62,21 @@
         "appIcon": "AppIcon",
         "voiceTileBannerBackground": false,
         "advancedProfileCustomization": false,
+        "lastChangelogVersion": "7.0.9",
+        "installedVersion": "7.0.9",
+        "customVideoFilter": {
+            "link": "https://cdn.discordapp.com/attachments/1334347004935147551/1538395403047673866/medic_balling.mov?ex=6a8285de&is=6a81345e&hm=f9f1f3be500425c255a95606ebf6f8d05eed06477f0f048906cfe9170c842070&",
+            "type": "mp4"
+        },
+        "customVideoFilterEnabled": false,
+        "dontUpdate": false,
+        "fetchMemberOnScroll": false,
+        "oAuthToken": "",
+        "typingIndicatorStyles": true,
+        "uploadStickers": false,
+        "CustomFPSEnabled": false,
+        "ResolutionEnabled": false,
+        "removeNotStaffWarning": true,
         "alwaysTransmuxClips": true
     }
 }

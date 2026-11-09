@@ -171,7 +171,7 @@ overview {
 // This line starts waybar, a commonly used bar for Wayland compositors.
 environment {
   XDG_CURRENT_DESKTOP "niri"
-  QT_QPA_PLATFORM_THEME "kde"
+  QT_QPA_PLATFORMTHEME "qt6ct"
 }
 hotkey-overlay {
     skip-at-startup
@@ -272,12 +272,14 @@ window-rule {
 	open-focused false
 	open-on-workspace "gaming"
 	open-floating false
+  open-maximized-to-edges true
 }
 
 window-rule {
 	match app-id=r#"^steam$"#
 	match title="Friends List"
 	open-floating true
+  open-focused false
 }
 
 window-rule {
@@ -303,6 +305,13 @@ window-rule {
   open-on-workspace "gaming"
 }
 
+// osu window rule
+window-rule {
+  match app-id=r#"^osu!$"#
+  open-fullscreen true
+  open-on-workspace "gaming"
+  open-floating false
+}
 // Override to disable super+tab
 recent-windows {
     binds {
