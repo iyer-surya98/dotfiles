@@ -267,8 +267,7 @@ window-rule {
 }
 // steam window rule
 window-rule {
-	match app-id=r#"^steam$"#
-	match title=r#"^Steam$"#
+	match app-id=r#"^steam$"# title=r#"^Steam$"#
 	open-focused false
 	open-on-workspace "gaming"
 	open-floating false
@@ -276,9 +275,10 @@ window-rule {
 }
 
 window-rule {
-	match app-id=r#"^steam$"#
-	match title="Friends List"
+	match app-id=r#"^steam$"# title=r#"^Friends List$"#
 	open-floating true
+	default-column-width { fixed 472; }
+	default-window-height { fixed 722; }
   open-focused false
 }
 
