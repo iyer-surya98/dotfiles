@@ -15,6 +15,7 @@ binds {
     Mod+Comma hotkey-overlay-title="Settings" { spawn "dms" "ipc" "call" "settings" "focusOrToggle"; }
     Mod+Ctrl+N hotkey-overlay-title="Notification Center" { spawn "dms" "ipc" "call" "notifications" "toggle"; }
     Mod+D hotkey-overlay-title="Dash" { spawn "dms" "ipc" "call" "dash" "toggle" ""; }
+    Mod+F8 repeat=false hotkey-overlay-title="Microphone Mute Toggle" { spawn "dms" "ipc" "call" "mic" "mute"; }
     Mod+L hotkey-overlay-title="Lock Screen" { spawn "dms" "ipc" "call" "lock" "lock"; }
     Mod+M hotkey-overlay-title="Media" { spawn "dms" "ipc" "call" "dash" "toggle" "media"; }
     Mod+N repeat=false hotkey-overlay-title="Notifications: Open" { spawn "dms" "ipc" "call" "notifications" "open"; }

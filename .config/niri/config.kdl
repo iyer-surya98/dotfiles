@@ -282,6 +282,9 @@ window-rule {
   open-focused false
 }
 
+
+
+// discord window rule
 window-rule {
 	match app-id=r#"^discord$"#
 	open-focused false
@@ -297,6 +300,14 @@ window-rule {
   match app-id=r#"^dev.zed.Zed$"#
   open-maximized-to-edges true
   open-on-workspace "browser"
+}
+
+window-rule {
+  match app-id=r#"^dev.zed.Zed$"# title=r#"^Zed — Settings$"#
+  open-floating true
+  open-maximized-to-edges false
+  default-column-width { fixed 827; }
+  default-window-height {fixed 731;}
 }
 
 window-rule {

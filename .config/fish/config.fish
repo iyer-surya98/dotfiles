@@ -12,6 +12,8 @@ fish_add_path "/home/iyers/.cargo/bin"
 
 # manpager and pager
 set -gx MANPAGER "nvim +Man!"
+set -Ux EDITOR nvim
+set -Ux VISUAL nvim
 set -gx PAGER bat
 set -gx LANG "en_IN.UTF-8"
 set -gx QT_QPA_PLATFORMTHEME qt6ct
